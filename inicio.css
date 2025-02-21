@@ -1,0 +1,48 @@
+#inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  height: 50vh;
+}
+
+#inicio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#inicio-image {
+  flex: 1;
+  max-width: 40%; /* Ajusta el ancho del logo */
+  display: flex;
+  justify-content: center;
+}
+
+#inicio-image img {
+  width: 100%;
+  max-width: 300px; /* Ajusta este valor según el tamaño deseado */
+  border-radius: 10px;
+}
+
+#inicio-text {
+  flex: 1;
+  max-width: 55%;
+  text-align: left;
+  padding: 20px;
+}
+
+#inicio-text h1 {
+  font-size: 3rem;
+  color: var(--color-primario);
+  margin-bottom: 10px;
+}
+
+#inicio-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--color-texto);
+}

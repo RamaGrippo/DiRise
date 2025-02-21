@@ -1,0 +1,55 @@
+/* Contenedor principal del slider */
+.servicios-slider {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Contenedor de los botones y Swiper */
+.swiper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre los botones y el Swiper */
+  width: 100%;
+}
+
+/* Ajuste del tamaño del Swiper */
+.swiper {
+  display: flex !important;
+  align-items: center;
+  min-height: 200px; /* Ajusta según necesidad */
+}
+
+.swiper-wrapper {
+  display: flex !important;
+  align-items: center !important; /* Centra verticalmente */
+}
+
+/* Asegurar que los slides ocupen todo el alto disponible y estén centrados */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 120px; /* Ajusta según necesidad */
+}
+
+/* Botones de navegación dentro del flujo normal */
+/* Sobrescribir la posición de los botones */
+.swiper-button-prev,
+.swiper-button-next {
+  position: static !important; /* Elimina el posicionamiento absoluto */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Asegurar que la paginación esté bien separada */
+.swiper-pagination {
+  margin-top: 25px; /* Espacio entre los slides y los puntos de paginación */
+}
