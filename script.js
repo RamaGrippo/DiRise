@@ -29,11 +29,11 @@ function scrollToTop() {
 
 document.addEventListener("DOMContentLoaded", function () {
   var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
+    slidesPerView: 5,
     spaceBetween: 20,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 1500,
       disableOnInteraction: false,
     },
     pagination: {
@@ -55,6 +55,37 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = event.target.closest(".plan-card");
       const pdfPath = card.getAttribute("data-pdf");
       window.location.href = pdfPath;
+    });
+  });
+});
+
+function igualarAlturas() {
+  let tarjetas = document.querySelectorAll(".plan-card");
+  let maxAltura = 0;
+
+  tarjetas.forEach((tarjeta) => {
+    tarjeta.style.height = "auto"; // Reinicia la altura antes de calcular
+    maxAltura = Math.max(maxAltura, tarjeta.offsetHeight);
+  });
+
+  tarjetas.forEach((tarjeta) => {
+    tarjeta.style.height = maxAltura + "px";
+  });
+}
+
+// Ejecutar cuando cargue la página y al cambiar tamaño
+window.addEventListener("load", igualarAlturas);
+window.addEventListener("resize", igualarAlturas);
+
+document.querySelectorAll("nav a").forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    window.scrollTo({
+      top: targetElement.offsetTop - 80, // Ajusta 80px según el tamaño del navbar
+      behavior: "smooth",
     });
   });
 });

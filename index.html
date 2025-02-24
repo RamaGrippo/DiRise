@@ -30,13 +30,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <!-- Enlaza Swiper.js -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
-  <body class="font-sans bg-coral">
+  <body class="font-sans bg-gris">
     <!-- Navbar -->
     <nav class="bg-azul text-white py-4">
       <div class="container mx-auto flex justify-between items-center px-4">
@@ -50,7 +53,7 @@
             <a href="#servicios" class="hover:text-amarillo">Servicios</a>
           </li>
           <li><a href="#planes" class="hover:text-amarillo">Planes</a></li>
-          <li>
+          <li style="display: none">
             <a href="#portafolio" class="hover:text-amarillo">Portafolio</a>
           </li>
           <li><a href="#contacto" class="hover:text-amarillo">Contacto</a></li>
@@ -60,7 +63,7 @@
 
     <!-- Contenido principal -->
     <main class="container mx-auto my-10 px-4">
-      <section id="inicio">
+      <section id="inicio" class="my-10">
         <div id="inicio-container" class="container">
           <div id="inicio-image" class="image">
             <img src="Di rise azul.jpg" alt="Imagen de DI RISE" />
@@ -80,78 +83,97 @@
         </div>
       </section>
 
-      <section id="servicios" class="py-16 text-center">
+      <section id="servicios" class="text-center my-10">
         <h2 class="text-3xl md:text-4xl font-bold text-azul mb-6">
           NUESTROS SERVICIOS
         </h2>
 
-        <div class="max-w-6xl w-full mx-auto">
+        <div class="w-full mx-auto">
           <!-- Contenedor de botones y Swiper -->
           <div class="flex items-center justify-center gap-4">
-            <!-- Botón izquierdo -->
-            <div class="swiper-button-prev text-azul hover:text-coral"></div>
-
             <!-- Swiper -->
-            <div class="swiper mySwiper w-full max-w-4xl">
+            <div class="swiper mySwiper w-full">
               <div class="swiper-wrapper">
                 <div
-                  class="swiper-slide bg-coral text-white p-6 rounded-lg text-lg font-semibold"
+                  class="swiper-slide bg-coral text-white p-6 rounded-lg text-lg font-semibold flex items-center justify-center h-full"
                 >
                   Email y contenidos
                 </div>
                 <div
-                  class="swiper-slide bg-azul text-white p-6 rounded-lg text-lg font-semibold"
+                  class="swiper-slide bg-azul text-white p-6 rounded-lg text-lg font-semibold flex items-center justify-center h-full"
                 >
                   Página web UX/UI
                 </div>
                 <div
-                  class="swiper-slide bg-amarillo text-white p-6 rounded-lg text-lg font-semibold"
+                  class="swiper-slide bg-amarillo text-white p-6 rounded-lg text-lg font-semibold flex items-center justify-center h-full"
                 >
                   Manejo de redes sociales
                 </div>
                 <div
-                  class="swiper-slide bg-coral text-white p-6 rounded-lg text-lg font-semibold"
+                  class="swiper-slide bg-coral text-white p-6 rounded-lg text-lg font-semibold flex items-center justify-center h-full"
                 >
                   SEO & PPC
                 </div>
                 <div
-                  class="swiper-slide bg-azul text-white p-6 rounded-lg text-lg font-semibold"
+                  class="swiper-slide bg-azul text-center text-white p-6 rounded-lg text-lg font-semibold flex items-center justify-center h-full"
                 >
                   Fotografía y video
                 </div>
                 <div
-                  class="swiper-slide bg-amarillo text-white p-6 rounded-lg text-lg font-semibold"
+                  class="swiper-slide bg-amarillo text-center text-white p-6 rounded-lg text-lg font-semibold flex items-center justify-center h-full"
                 >
                   Planeación y brandbook
                 </div>
                 <div
-                  class="swiper-slide bg-coral text-white p-6 rounded-lg text-lg font-semibold"
+                  class="swiper-slide bg-coral text-center text-white p-6 rounded-lg text-lg font-semibold flex items-center justify-center h-full"
                 >
                   Perfilamiento y currículum
                 </div>
                 <div
-                  class="swiper-slide bg-azul text-white p-6 rounded-lg text-lg font-semibold"
+                  class="swiper-slide bg-azul text-center text-white p-6 rounded-lg text-lg font-semibold flex items-center justify-center h-full"
                 >
                   Análisis de datos
                 </div>
                 <div
-                  class="swiper-slide bg-amarillo text-white p-6 rounded-lg text-lg font-semibold"
+                  class="swiper-slide bg-amarillo text-center text-white p-6 rounded-lg text-lg font-semibold flex items-center justify-center h-full"
                 >
                   Automatización, influencia & marketing
                 </div>
               </div>
             </div>
-
-            <!-- Botón derecho -->
-            <div class="swiper-button-next text-azul hover:text-coral"></div>
           </div>
 
-          <!-- Contenedor de paginación -->
-          <div class="swiper-pagination mt-4"></div>
+          <!-- Íconos de redes sociales -->
+          <div class="flex justify-around mt-6 gap-4 text-6xl">
+            <a target="_blank" class="text-green-500">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a target="_blank" class="text-black">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a target="_blank" class="text-pink-500">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a target="_blank" class="text-blue-600">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a target="_blank" class="text-blue-700">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a target="_blank" class="text-black">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+            <a target="_blank" class="text-red-500">
+              <i class="fab fa-google"></i>
+            </a>
+            <a target="_blank" class="text-red-600">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </section>
 
-      <section id="planes">
+      <section id="planes" class="my-10">
         <h2 id="planes-titulo">Nuestros Planes</h2>
         <p id="planes-descripcion">
           Elige el plan que más te convenga y descárgalo en PDF.
@@ -213,7 +235,11 @@
         </div>
       </section>
 
-      <section id="portafolio" class="text-center py-10">
+      <section
+        id="portafolio"
+        class="text-center py-10 hide"
+        style="display: none"
+      >
         <h2 class="text-3xl font-bold text-azul">Portafolio</h2>
         <p class="text-lg">Algunos de nuestros trabajos y casos de éxito.</p>
       </section>
@@ -224,7 +250,6 @@
       </section>
     </main>
 
-    <!-- Botón flotante para volver arriba -->
     <button class="boton-flotante" onclick="scrollToTop()">
       <i class="fa-solid fa-arrow-up"></i>
     </button>

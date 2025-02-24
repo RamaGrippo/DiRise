@@ -34,22 +34,3 @@
   text-align: center;
   min-height: 120px; /* Ajusta según necesidad */
 }
-
-/* Botones de navegación dentro del flujo normal */
-/* Sobrescribir la posición de los botones */
-.swiper-button-prev,
-.swiper-button-next {
-  position: static !important; /* Elimina el posicionamiento absoluto */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-/* Asegurar que la paginación esté bien separada */
-.swiper-pagination {
-  margin-top: 25px; /* Espacio entre los slides y los puntos de paginación */
-}

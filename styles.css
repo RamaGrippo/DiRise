@@ -12,6 +12,15 @@
   align-items: center;
   gap: 20px;
 }
+
+nav {
+  position: fixed; /* Fijado en la parte superior */
+  top: 0; /* Pegado arriba */
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho */
+  z-index: 1000; /* Se asegura de que esté sobre otros elementos */
+}
+
 .boton-flotante {
   position: fixed;
   bottom: 20px;
