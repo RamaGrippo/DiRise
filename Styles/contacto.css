@@ -1,0 +1,89 @@
+/* Estilos de la sección Contacto */
+#contacto {
+  text-align: center;
+  padding: 20px 20px;
+  background-color: var(--color-primario);
+  color: var(--color-texto);
+  margin-top: 20px;
+}
+
+/* Encabezado */
+#contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#contacto p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Redes Sociales */
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Iconos */
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: white;
+  background-color: #333;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto hover */
+.social-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Colores específicos */
+.social-icons a[aria-label="WhatsApp"] {
+  background-color: #25d366;
+}
+.social-icons a[aria-label="TikTok"] {
+  background-color: #000000;
+}
+.social-icons a[aria-label="Instagram"] {
+  background-color: #e4405f;
+}
+.social-icons a[aria-label="Facebook"] {
+  background-color: #1877f2;
+}
+.social-icons a[aria-label="LinkedIn"] {
+  background-color: #0077b5;
+}
+.social-icons a[aria-label="X (Twitter)"] {
+  background-color: #000000;
+}
+.social-icons a[aria-label="Correo de Google"] {
+  background-color: #db4437;
+}
+.social-icons a[aria-label="YouTube"] {
+  background-color: #ff0000;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icons a {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,99 @@
+📌 TAILWIND CSS - FUNCIONALIDADES MÁS USADAS
+
+🎨 COLORES
+
+bg-blue-500 → Fondo azul
+text-red-600 → Texto rojo
+border-green-400 → Borde verde
+bg-gray-200 → Fondo gris claro
+hover:bg-blue-700 → Cambio de color al pasar el mouse
+bg-gradient-to-r from-blue-500 to-green-500 → Fondo con degradado de azul a verde
+
+📏 TAMAÑOS
+
+w-full → Ancho completo
+max-w-lg → Ancho máximo grande
+h-32 → Alto de 32 unidades
+w-1/2 → Ancho del 50%
+h-screen → Alto del 100% de la pantalla
+min-h-[300px] → Alto mínimo de 300px
+
+🖼️ ESPACIADO (Padding y Margin)
+
+p-4 → Padding interno
+px-6 → Padding horizontal
+py-8 → Padding vertical
+m-2 → Margin
+mx-auto → Centrar horizontalmente
+space-y-4 → Espaciado entre elementos hijos en el eje Y
+space-x-4 → Espaciado entre elementos hijos en el eje X
+gap-6 → Espaciado en flex/grid
+
+📍 ALINEACIÓN Y FLEXBOX
+
+flex → Activa flexbox
+flex-col → Apila elementos verticalmente
+flex-row → Alinea elementos en fila
+items-center → Centra elementos horizontalmente
+justify-between → Distribuye elementos con espacio entre ellos
+justify-center → Centra horizontalmente
+gap-4 → Espaciado entre elementos en flexbox/grid
+self-end → Alinea un solo elemento al final
+
+🔤 TEXTO Y FUENTES
+
+text-xl → Texto grande
+font-bold → Texto en negrita
+text-center → Texto centrado
+leading-relaxed → Espaciado entre líneas relajado
+tracking-wide → Espaciado entre letras más amplio
+uppercase → Texto en mayúsculas
+truncate → Texto truncado con puntos suspensivos
+
+🟦 BORDES Y SOMBRAS
+
+rounded-lg → Bordes redondeados
+rounded-full → Bordes completamente redondeados
+shadow-md → Sombra media
+border → Borde sólido
+border-2 → Borde de 2px
+border-dashed → Borde punteado
+ring-2 ring-blue-500 → Efecto de anillo alrededor del elemento
+
+📲 RESPONSIVE (Ejemplo de uso en distintas pantallas)
+
+sm:text-sm → En pantallas pequeñas, usa texto más chico
+md:flex-row → En pantallas medianas, usa flex en fila
+lg:w-1/3 → En pantallas grandes, ancho de 33%
+xl:px-16 → En pantallas extra grandes, padding horizontal de 16
+2xl:container → En pantallas muy grandes, usa un contenedor principal
+
+🎞️ TRANSICIONES Y ANIMACIONES
+
+transition → Agrega una transición suave
+duration-300 → Duración de 300ms en animaciones
+ease-in-out → Suaviza la entrada y salida de la animación
+animate-bounce → Hace que el elemento rebote
+animate-pulse → Genera un efecto de pulso
+
+🎨 GRID Y DISEÑO AVANZADO
+
+grid → Activa CSS Grid
+grid-cols-3 → Divide el grid en 3 columnas
+grid-rows-2 → Divide el grid en 2 filas
+col-span-2 → Elemento ocupa 2 columnas
+row-span-2 → Elemento ocupa 2 filas
+
+📜 LISTAS Y TABLAS
+
+list-disc → Lista con viñetas
+list-none → Quitar viñetas de la lista
+table-auto → Tabla con ancho automático
+table-fixed → Tabla con ancho fijo
+divide-y-2 divide-gray-300 → Divide filas con una línea
+
+🔗 BOTONES RÁPIDOS (Ejemplo listo para copiar y pegar)
+
+<button class="inicio bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+  Click aquí
+</button>

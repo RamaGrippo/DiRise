@@ -1,0 +1,148 @@
+/* Sección Hero */
+#hero {
+  background-color: var(--color-texto);
+  color: var(--color-primario);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+.hero-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: var(--color-secundario);
+  color: var(--color-texto);
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--color-acento);
+}
+
+/* Sección Inicio */
+#inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primario);
+  padding: 10px 10px;
+  margin-bottom: 25px;
+}
+
+/* Contenedor Principal */
+#inicio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+}
+
+/* Imagen */
+#inicio-image {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+#inicio-image img {
+  max-width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#inicio-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Texto */
+#inicio-text {
+  flex: 1;
+  max-width: 1000px;
+  text-align: left;
+  padding: 20px;
+}
+
+#inicio-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-texto);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+/* Línea decorativa bajo el título */
+#inicio-text h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: var(--color-primario);
+  margin-top: 8px;
+}
+
+/* Párrafo */
+#inicio-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--color-texto);
+  transition: opacity 0.3s ease;
+}
+
+#inicio-text p:hover {
+  opacity: 0.9;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  #hero,
+  #inicio {
+    height: auto; /* En móviles, que el contenido defina la altura */
+    padding: 60px 20px;
+  }
+
+  #inicio-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #inicio-image {
+    max-width: 100%;
+  }
+
+  #inicio-text {
+    text-align: center;
+  }
+
+  #inicio-text h1::after {
+    margin: 8px auto;
+  }
+}

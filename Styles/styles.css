@@ -1,0 +1,232 @@
+/* Definición de colores
+:root {
+  --azul: #142340;
+  --coral: #ff888a;
+  --gris: #c3ccdb;
+  --amarillo: #edbc79;
+  --negro: #000000;
+  --blanco: #ffffff;
+} */
+
+:root {
+  /* Paleta de colores base */
+  --color-primario: #142340; /* Azul */
+  --color-secundario: #ff888a; /* Coral */
+  --color-terciario: #c3ccdb; /* Gris */
+  --color-acento: #edbc79; /* Amarillo */
+  --color-texto: #ffffff; /* Blanco */
+  --color-fondo: #000000; /* Negro */
+}
+
+/* 🌙 Modo Oscuro */
+[data-theme="dark"] {
+  --color-primario: #1a1a1a; /* Gris oscuro */
+  --color-secundario: #ff5757; /* Rojo vibrante */
+  --color-terciario: #333; /* Gris medio */
+  --color-acento: #ffcc00; /* Amarillo brillante */
+  --color-texto: #ffffff; /* Blanco */
+  --color-fondo: #121212; /* Fondo más oscuro */
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 12px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 50px; /* Aumentamos el tamaño del nav */
+}
+
+/* Contenedor */
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100%;
+}
+
+/* Logo */
+#nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+#nav-logo img {
+  width: 60px;
+  height: auto;
+  display: block;
+}
+
+/* Menú principal */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Items del menú */
+nav ul li {
+  display: inline-block;
+}
+
+/* Enlaces del menú */
+nav ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 8px 12px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover con subrayado animado */
+nav ul a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--color-acento);
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul a:hover {
+  color: var(--color-acento);
+}
+
+nav ul a:hover::after {
+  width: 100%;
+}
+
+/* Botón de menú en móviles */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Menú responsivo */
+@media (max-width: 1000px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-primario);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul a {
+    display: block;
+    padding: 12px 0;
+  }
+}
+
+/* Botón flotante */
+.boton-flotante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-secundario);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  transition: all 0.3s ease-in-out, transform 0.2s ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+/* Efecto al hacer hover */
+.boton-flotante:hover {
+  background-color: var(--color-acento);
+  transform: scale(1.1);
+}
+
+/* Clase para mostrar el botón */
+.boton-flotante.mostrar {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: var(--color-fondo-footer, #222);
+  color: var(--color-texto-footer, #fff);
+  font-size: 1rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Enlace dentro del footer */
+footer a {
+  color: var(--color-secundario, --color-secundario);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: var(--color-acento, --color-acento);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}

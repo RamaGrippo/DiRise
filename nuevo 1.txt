@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiRise - Agencia de Marketing</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="inicio.css" />
+    <link rel="stylesheet" href="planes.css" />
+    <link rel="stylesheet" href="servicios.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a id="nav-icon" href="#inicio">DiRise</a>
+
+        <button onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul id="nav-menu">
+          <li>
+            <a href="#inicio">Inicio</a>
+          </li>
+          <li>
+            <a href="#servicios">Servicios</a>
+          </li>
+          <li>
+            <a href="#planes">Planes</a>
+          </li>
+          <li style="display: none">
+            <a href="#portafolio">Portafolio</a>
+          </li>
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container">
+      <section id="hero">
+        <div class="hero-container">
+          <h1>Potenciamos tu negocio con estrategias digitales</h1>
+          <p>
+            Empieza a vender con tus canales digitales, posiciona tu marca e
+            impacta online. ¡Consúltanos ahora!
+          </p>
+          <a href="#contacto" class="hero-button">Agenda una consulta</a>
+        </div>
+      </section>
+
+      <section id="inicio">
+        <div id="inicio-container" class="container">
+          <div id="inicio-image" class="image">
+            <img src="Di rise azul.jpg" alt="Imagen de DI RISE" />
+          </div>
+          <div id="inicio-text" class="text">
+            <h1>DI RISE</h1>
+            <p>
+              Somos un equipo enfocado en el marketing digital personalizado, en
+              la atención de calidad y en dar soluciones accesibles para
+              personas naturales, emprendedores, pequeñas y medianas empresas.
+              <br /><br />
+              Somos una agencia digital comprometida en transformar la presencia
+              en línea de las empresas a través de soluciones innovadoras y
+              personalizadas que aseguran resultados medibles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios">
+        <h2>NUESTROS SERVICIOS</h2>
+
+        <div class="servicios-container">
+          <div class="servicios-item"><span>Email y contenidos</span></div>
+          <div class="servicios-item"><span>Página web UX/UI</span></div>
+          <div class="servicios-item">
+            <span>Manejo de redes sociales</span>
+          </div>
+          <div class="servicios-item"><span>SEO & PPC</span></div>
+          <div class="servicios-item"><span>Fotografía y video</span></div>
+          <div class="servicios-item"><span>Planeación y brandbook</span></div>
+          <div class="servicios-item">
+            <span>Perfilamiento y currículum</span>
+          </div>
+
+          <div class="servicios-item">
+            <span>Análisis de datos</span>
+            <video class="video-hover" muted loop autoplay>
+              <source src="AnalisisDatos.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="servicios-item">
+            <span>Automatización, influencia & marketing</span>
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a target="_blank">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a target="_blank">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a target="_blank">
+            <i class="fab fa-google"></i>
+          </a>
+          <a target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="planes">
+        <h2 id="planes-titulo">Nuestros Planes</h2>
+        <p id="planes-descripcion">
+          Elige el plan que más te convenga y descárgalo en PDF.
+        </p>
+
+        <div id="planes-container">
+          <div
+            id="planes-empresas"
+            class="plan-card"
+            data-pdf="pdfs/empresas.pdf"
+          >
+            <i class="fas fa-building icon"></i>
+            <h3 class="plan-titulo">Empresas</h3>
+            <ul class="plan-lista">
+              <li>One Time</li>
+              <li>Rise</li>
+              <li>Rise Plus +</li>
+            </ul>
+            <button id="planes-empresas-btn" class="download-btn">
+              Descargar PDF
+            </button>
+          </div>
+
+          <div
+            id="planes-startups"
+            class="plan-card"
+            data-pdf="pdfs/startups.pdf"
+          >
+            <i class="fas fa-rocket icon"></i>
+            <h3 class="plan-titulo">Start Ups</h3>
+            <ul class="plan-lista">
+              <li>Inicio</li>
+              <li>Escala</li>
+              <li>Expansión</li>
+              <li>Expansión Plus +</li>
+            </ul>
+            <button id="planes-startups-btn" class="download-btn">
+              Descargar PDF
+            </button>
+          </div>
+
+          <div
+            id="planes-personas"
+            class="plan-card"
+            data-pdf="pdfs/personas.pdf"
+          >
+            <i class="fas fa-user icon"></i>
+            <h3 class="plan-titulo">Personas</h3>
+            <ul class="plan-lista">
+              <li>Crece</li>
+              <li>Emprende</li>
+              <li>Avanza</li>
+              <li>Crece Plus +</li>
+            </ul>
+            <button id="planes-personas-btn" class="download-btn">
+              Descargar PDF
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="portafolio" style="display: none">
+        <h2>Portafolio</h2>
+        <p>Algunos de nuestros trabajos y casos de éxito.</p>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Contáctanos para más información.</p>
+      </section>
+    </main>
+
+    <button id="btnSubir" class="boton-flotante" onclick="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <footer>
+      <p>Síguenos en nuestras redes sociales:</p>
+      <div>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <p class="mt-4">Contacto: info@dirise.com</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
+
+
+
+#servicios {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#servicios h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--azul);
+  margin: 10px;
+}
+
+/* Contenedor en grid 3x3 */
+.servicios-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+/* Cada servicio */
+.servicios-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 150px;
+  background-color: var(--coral);
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: transform 0.3s ease, min-height 0.3s ease;
+}
+
+/* Efecto al hacer hover: crece */
+.servicios-item:hover {
+  transform: scale(1.2);
+  min-height: 180px;
+  z-index: 10;
+}
+
+/* Video siempre visible */
+.video-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texto sobre el video */
+.servicios-item span {
+  position: relative;
+  z-index: 2;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Íconos redes sociales */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 2.5rem;
+  margin-top: 24px;
+}
+
+.social-icons a {
+  text-decoration: none;
+}

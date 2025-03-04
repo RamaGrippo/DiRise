@@ -1,0 +1,59 @@
+#servicios {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#servicios h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primario);
+  margin: 10px;
+}
+
+/* Contenedor flexible para móviles */
+.servicios-container {
+  display: flex;
+  flex-wrap: wrap; /* 🔥 Permite que los elementos pasen a una nueva línea */
+  justify-content: center; /* 🔥 Centra los elementos en cada fila */
+  gap: 20px;
+  width: 95%;
+  margin: auto;
+}
+
+.servicios-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-texto);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  padding: 10px;
+  min-width: 350px;
+  min-height: 200px;
+}
+
+/* Contenedor del video y el texto */
+.servicios-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Video ocupa todo el ancho disponible sin desbordar */
+.video-hover {
+  width: 100%;
+  max-width: 300px; /* Ajuste para que no sea demasiado grande en pantallas grandes */
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Texto debajo del video */
+.servicios-content span {
+  color: var(--color-primario);
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 8px;
+}

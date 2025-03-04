@@ -1,0 +1,81 @@
+/* Sección de Planes */
+#planes {
+  padding: 5px 5px;
+  text-align: center;
+}
+
+#planes-titulo {
+  margin: 10px;
+}
+
+/* Contenedor de los planes */
+#planes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: stretch; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+/* Tarjetas de los planes */
+.plan-card {
+  background: var(--color-primario);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px; /* Tamaño fijo para todas las tarjetas */
+  min-height: 380px; /* Altura mínima para evitar tarjetas demasiado chicas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+/* Ajusta el tamaño de la lista para que todas las tarjetas se vean iguales */
+.plan-lista {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Permite que la lista ocupe el espacio necesario */
+  gap: 25px;
+  color: var(--color-texto);
+}
+
+/* Ícono de la tarjeta */
+.icon {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: var(--color-secundario);
+}
+
+/* Título de cada plan */
+.plan-titulo {
+  font-size: 1.6rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Botón de descarga */
+.download-btn {
+  width: 100%;
+  color: var(--color-texto);
+  background-color: var(--color-secundario);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+  margin-top: auto; /* Para que el botón se mantenga abajo */
+}
+
+.download-btn:hover {
+  background: var(--color-acento);
+}
