@@ -223,6 +223,21 @@ footer a:hover {
   color: var(--color-acento, --color-acento);
 }
 
+/* Importar Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+/* Aplicar la fuente a los títulos */
+h1,
+h2,
+h3 {
+  font-family: "Libre Caslon Text", serif;
+}
+
+/* Aplicar la fuente Montserrat al resto del contenido */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 /* Responsividad */
 @media (max-width: 768px) {
   footer {
