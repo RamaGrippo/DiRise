@@ -4,6 +4,13 @@
   text-align: center;
 }
 
+#planes h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primario);
+  margin: 10px;
+}
+
 #planes-titulo {
   margin: 10px;
 }
@@ -46,6 +53,12 @@
   flex-grow: 1; /* Permite que la lista ocupe el espacio necesario */
   gap: 25px;
   color: var(--color-texto);
+}
+
+.plan-card h3 {
+  font-size: 1.8rem; /* Tamaño más grande */
+  color: var(--color-texto); /* Color del texto */
+  margin-bottom: 15px;
 }
 
 /* Ícono de la tarjeta */

@@ -15,7 +15,7 @@
   margin: 0 auto;
 }
 
-#hero h1 {
+#hero h2 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
@@ -48,7 +48,6 @@
   justify-content: center;
   align-items: center;
   background-color: var(--color-primario);
-  padding: 10px 10px;
   margin-bottom: 25px;
 }
 
@@ -65,15 +64,16 @@
 /* Imagen */
 #inicio-image {
   flex: 1;
-  max-width: 40%;
+  max-width: 30%;
   display: flex;
   justify-content: center;
+  background-color: var(--color-secundario);
 }
 
 #inicio-image img {
   max-width: 400px;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding-left: 15px;
   transition: transform 0.3s ease;
 }
 
@@ -87,6 +87,7 @@
   max-width: 1000px;
   text-align: left;
   padding: 20px;
+  padding-left: 50px;
 }
 
 #inicio-text h1 {
@@ -99,7 +100,6 @@
   position: relative;
 }
 
-/* Línea decorativa bajo el título */
 #inicio-text h1::after {
   content: "";
   display: block;
@@ -109,7 +109,6 @@
   margin-top: 8px;
 }
 
-/* Párrafo */
 #inicio-text p {
   font-size: 1.2rem;
   line-height: 1.8;
@@ -125,7 +124,7 @@
 @media (max-width: 768px) {
   #hero,
   #inicio {
-    height: auto; /* En móviles, que el contenido defina la altura */
+    height: auto;
     padding: 60px 20px;
   }
 

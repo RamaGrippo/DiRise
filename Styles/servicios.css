@@ -11,49 +11,71 @@
   margin: 10px;
 }
 
-/* Contenedor flexible para móviles */
 .servicios-container {
   display: flex;
-  flex-wrap: wrap; /* 🔥 Permite que los elementos pasen a una nueva línea */
-  justify-content: center; /* 🔥 Centra los elementos en cada fila */
-  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
   width: 95%;
   margin: auto;
+  padding: 20px 0px;
 }
 
 .servicios-item {
+  width: 240px; /* Más chico */
+  height: 120px; /* Más bajo */
   display: flex;
+  align-items: flex-end;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--color-texto);
+  position: relative;
   border-radius: 8px;
-  transition: transform 0.3s ease;
-  padding: 10px;
-  min-width: 350px;
-  min-height: 200px;
+  overflow: hidden;
+  background-color: var(--color-acento);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease-in-out;
 }
 
-/* Contenedor del video y el texto */
-.servicios-content {
+.servicios-item:hover {
+  background-color: var(--color-primario);
+}
+
+.servicios-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  padding: 10px;
 }
 
-/* Video ocupa todo el ancho disponible sin desbordar */
-.video-hover {
-  width: 100%;
-  max-width: 300px; /* Ajuste para que no sea demasiado grande en pantallas grandes */
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Texto debajo del video */
-.servicios-content span {
-  color: var(--color-primario);
-  font-size: 1.1rem;
+.servicios-titulo {
+  font-size: 1.5rem; /* Un poco más grande */
   font-weight: bold;
-  margin-top: 8px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out; /* Animación al subir */
+}
+
+.servicios-descripcion {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  color: var(--color-texto);
+  padding: 10px;
+  font-size: 1rem;
+  transition: bottom 0.3s ease-in-out;
+}
+
+/* Ajustamos la subida para que no llegue demasiado alto */
+.servicios-item:hover .servicios-descripcion {
+  bottom: 5px; /* Sube pero deja espacio */
+}
+
+/* También ajustamos el título para que no se acerque demasiado */
+.servicios-item:hover .servicios-titulo {
+  transform: translateY(-40px);
 }
