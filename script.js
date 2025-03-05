@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  const cards = document.querySelectorAll(".card-servicio");
+
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("active"); // Activa la animación
+    });
+  });
 });
 
 // Función para igualar alturas de tarjetas
@@ -63,4 +71,14 @@ document.querySelectorAll(".servicios-item").forEach((item) => {
 
 document.getElementById("menu-toggle").addEventListener("click", function () {
   document.getElementById("nav-menu").classList.toggle("active");
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card-servicio");
+
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("active"); // Activa la animación
+    });
+  });
 });
