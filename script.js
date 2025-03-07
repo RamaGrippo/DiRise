@@ -17,6 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  document.querySelectorAll(".whatsapp-btn").forEach((button) => {
+    button.addEventListener("click", function () {
+      const plan = this.closest(".plan-card").dataset.plan;
+      const phoneNumber = "+573112158677"; // Reemplaza con tu número de WhatsApp
+      const message = `Hola, quiero más información del Plan: ${plan}`;
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+        message
+      )}`;
+      window.open(url, "_blank");
+    });
+  });
+
   const cards = document.querySelectorAll(".card-servicio");
 
   cards.forEach((card) => {
